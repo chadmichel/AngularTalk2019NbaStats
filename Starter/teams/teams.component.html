@@ -1,0 +1,18 @@
+<h1>NBA TEAMS</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Location</th>
+    </tr>
+    <tr *ngFor="let team of teams">
+        <td>
+            <button (click)="goToTeam(team.name)">
+                {{team.name}}
+            </button>
+        </td>
+        <td>
+            {{team.location}}
+        </td>
+    </tr>
+</table>

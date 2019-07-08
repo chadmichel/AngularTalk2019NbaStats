@@ -1,0 +1,28 @@
+<div *ngIf="team != null">
+
+    <h1>{{team.name}}</h1>
+
+    <h2>Roster</h2>
+
+    <table>
+
+        <tr>
+            <th>Name</th>
+            <th>Height</th>
+            <th>Weight</th>
+        </tr>
+
+        <tr *ngFor="let player of team.players">
+            <td>
+                {{player.full_name}}
+            </td>
+            <td>
+                {{player.height}}
+            </td>
+
+            <td>
+                {{player.weight}}
+            </td>
+        </tr>
+    </table>
+</div>
